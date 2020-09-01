@@ -50,8 +50,8 @@
     },
     {
       "uuid":"f220",
-      "name":"Гладиатор220",
-      "type":"action",
+      "name":"ГладиатоXAXA",
+      "type":"comedy",
       "year":"2005",
       "rate":"8.234",
       "lenght":"3:22",
@@ -62,8 +62,8 @@
     },
     {
       "uuid":"f222",
-      "name":"Гладиатор222",
-      "type":"action",
+      "name":"ГладиаторXACA",
+      "type":"comedy",
       "year":"2005",
       "rate":"8.234",
       "lenght":"3:22",
@@ -116,9 +116,9 @@
       "name":"Go My Plus",
       "location":{
         "latitude":19.863344,
-        "longitude":40.268245,
+        "longitude":40.268245
       },
-      "uri":"",
+      "uri":"/ffffffff",
       "films":["f100", "f110", "f111"]
     },
     {
@@ -126,9 +126,9 @@
       "name":"World Cinema Plus",
       "location":{
         "latitude":59.863344,
-        "longitude":30.268245,
+        "longitude":30.268245
       },
-      "uri":"",
+      "uri":"/ddddddddd",
       "films":["f200", "f220", "f222"]
     },
     {
@@ -136,9 +136,9 @@
       "name":"Cinema Gold",
       "location":{
         "latitude":29.863344,
-        "longitude":30.268245,
+        "longitude":30.268245
       },
-      "uri":"",
+      "uri":"/sssssssss",
       "films":["f300", "f330", "f333"]
     }
   ]
