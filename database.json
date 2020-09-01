@@ -1,0 +1,145 @@
+{
+  "films":[
+    {
+      "uuid":"f100",
+      "name":"Начало",
+      "type":"action",
+      "year":"2019",
+      "rate":"9.221",
+      "lenght":"2:23",
+      "country":"Англия",
+      "link":"https://ok.ru/video/31410555587",
+      "picture":"https://img2.goodfon.ru/original/2880x1800/4/46/nachalo-inception-leonardo-3925.jpg",
+      "cinemas": ["c100","c300"]
+    },
+    {
+      "uuid":"f110",
+      "name":"Начало110",
+      "type":"action",
+      "year":"2019",
+      "rate":"9.221",
+      "lenght":"2:23",
+      "country":"Англия",
+      "link":"https://ok.ru/video/808189430300",
+      "picture":"https://www.sunhome.ru/i/wallpapers/170/avatar-film-oboi.orig.jpg",
+      "cinemas": ["c100","c300"]
+    },
+    {
+      "uuid":"f111",
+      "name":"Начало111",
+      "type":"action",
+      "year":"2019",
+      "rate":"9.221",
+      "lenght":"2:23",
+      "country":"Англия",
+      "link":"https://ok.ru/video/1688839522844",
+      "picture":"https://i.playground.ru/p/VXWi6LggzIoSf5e39IILHA.jpeg",
+      "cinemas": ["c100","c300"]
+    },
+    {
+      "uuid":"f200",
+      "name":"Гладиатор",
+      "type":"action",
+      "year":"2005",
+      "rate":"8.234",
+      "lenght":"3:22",
+      "country":"США",
+      "link":"http://techslides.com/demos/sample-videos/small.mp4",
+      "picture":"http://nsvet.ru/images/3av3OLxbHS0.jpg",
+      "cinemas": ["c400","c300"]
+    },
+    {
+      "uuid":"f220",
+      "name":"Гладиатор220",
+      "type":"action",
+      "year":"2005",
+      "rate":"8.234",
+      "lenght":"3:22",
+      "country":"США",
+      "link":"http://techslides.com/demos/sample-videos/small.mp4",
+      "picture":"https://thumbs.dreamstime.com/z/%D0%BC%D0%BE-%D0%BE-%D1%8B%D0%B5-%D1%80%D1%83%D0%B7%D1%8C%D1%8F-%D1%81%D0%BC%D0%BE%D1%82%D1%80%D1%8F-%D1%84%D0%B8-%D1%8C%D0%BC-d-49210324.jpg",
+      "cinemas": ["c200","c300", "400"]
+    },
+    {
+      "uuid":"f222",
+      "name":"Гладиатор222",
+      "type":"action",
+      "year":"2005",
+      "rate":"8.234",
+      "lenght":"3:22",
+      "country":"США",
+      "link":"http://techslides.com/demos/sample-videos/small.mp4",
+      "picture":"https://i.artfile.ru/1920x1280_1320674_[www.ArtFile.ru].jpg",
+      "cinemas": ["c100"]
+    },
+    {
+      "uuid":"f300",
+      "name":"Фашист300",
+      "type":"action",
+      "year":"2010",
+      "rate":"8.322",
+      "lenght":"1:11",
+      "country":"Германия",
+      "link":"http://techslides.com/demos/sample-videos/small.mp4",
+      "picture":"https://img4.goodfon.ru/original/4358x2905/5/34/girl-cinema-film-jungle-jumanji-tree-movie-jumanji-welcome-t.jpg",
+      "cinemas":["c400","c100"]
+    },
+    {
+      "uuid":"f330",
+      "name":"Фашист330",
+      "type":"action",
+      "year":"2010",
+      "rate":"8.322",
+      "lenght":"1:11",
+      "country":"Германия",
+      "link":"http://techslides.com/demos/sample-videos/small.mp4",
+      "picture":"https://avatars.mds.yandex.net/get-zen_doc/1328418/pub_5d49b9ecd4f07a00ad62b126_5d49c549ce44a000b24422fa/scale_1200",
+      "cinemas":["c100","c200","300","400"]
+    },
+    {
+      "uuid":"f333",
+      "name":"Фашист333",
+      "type":"action",
+      "year":"2010",
+      "rate":"8.322",
+      "lenght":"1:11",
+      "country":"Германия",
+      "link":"http://techslides.com/demos/sample-videos/small.mp4",
+      "picture":"https://www.peoples.ru/art/cinema/actor/depp/johnnydepp_201307050825370.jpg",
+      "cinemas":["c100","c200","400"]
+    }
+  ],
+
+  "cinemas":[
+    {
+      "uuid":"c100",
+      "name":"Go My Plus",
+      "location":{
+        "latitude":19.863344,
+        "longitude":40.268245,
+      },
+      "uri":"",
+      "films":["f100", "f110", "f111"]
+    },
+    {
+      "uuid":"c200",
+      "name":"World Cinema Plus",
+      "location":{
+        "latitude":59.863344,
+        "longitude":30.268245,
+      },
+      "uri":"",
+      "films":["f200", "f220", "f222"]
+    },
+    {
+      "uuid":"c300",
+      "name":"Cinema Gold",
+      "location":{
+        "latitude":29.863344,
+        "longitude":30.268245,
+      },
+      "uri":"",
+      "films":["f300", "f330", "f333"]
+    }
+  ]
+}
