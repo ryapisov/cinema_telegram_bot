@@ -1,5 +1,7 @@
 require('dotenv').config()
 const log = console.log
+const geolib = require("geolib")
+const _ = require("lodash")
 const Telegram = require("node-telegram-bot-api")
 const mongoose = require("mongoose")
 const config = require("./config")
@@ -70,7 +72,8 @@ bot.on('message', msg =>{
   }
 
   if(msg.location){
-    log(msg.location)
+    // локация пользователя где он сейчас находится
+    getCinemasInCoord(chatId, msg.location)
   }
 
 })
@@ -147,4 +150,26 @@ function sendHTML(chatId, html, kbName = null){
   }
 
   bot.sendMessage(chatId, html, options)
+}
+
+function getCinemasInCoord(chatId, location){
+  // выполнение функции занимает время 5-15 сек.
+  Cinema.find({}).then((cinemas)=>{
+    // дистанция до кинотеатра
+    cinemas.forEach(c =>{
+      c.distance = geolib.getDistance(location, c.location)/1000
+    })
+
+    cinemas = _.sortBy(cinemas, 'distance')
+
+    const html = cinemas.map((c, i)=>{
+      return `<b>${i + 1}</b> ${c.name}.
+        <em>Расстояние</em> -
+        <strong>${c.distance}</strong> км. /c${c.uuid}
+      `
+    }).join('\n')
+
+    sendHTML(chatId, html, 'home')
+  })
+  log('')
 }
